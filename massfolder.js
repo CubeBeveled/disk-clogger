@@ -6,5 +6,6 @@ let index = 0;
 while (true) {
   try {
     fs.mkdirSync(folderName + index);
+    index++;
   } catch (e) { } // Just incase the folder alr exists and fs throws an error
 }
